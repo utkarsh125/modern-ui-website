@@ -8,13 +8,24 @@
     margin: 1rem;
 }
 
+.gpt3__features-container__feature-vertical {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin: 1rem;
+}
+
 .gpt3__features-container__feature-title {
     flex: 1;
-    max-width: 180px;
+    /* max-width: 180px; */
+    min-width:12vw;
     margin-right: 2rem;
 }
 
-.gpt3__features-container__feature-title h1 {
+.gpt3__features-container__feature-title h1, .gpt3__features-container__feature-title-vertical h1 {
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 18px;
@@ -23,7 +34,11 @@
     color: #fff;
 }
 
-.gpt3__features-container__feature-title div {
+.gpt3__features-container__feature-title-vertical h1 {
+    margin-bottom: 5vh;
+}
+
+.gpt3__features-container__feature-title div, .gpt3__features-container__feature-title-vertical div {
     width: 38px;
     height: 3px;
     background: var(--gradient-bar);
@@ -31,13 +46,14 @@
     margin-bottom: 0.25rem;
 }
 
-.gpt3__features-container_feature-text {
-    flex: 2;
-    max-width: 390px;
+.gpt3__features-container__feature-text {
+    /* flex: 2; */ /* You don't need these two lines */
+    /* max-width: 390px; */
+    max-width: 60vw;
     display: flex;
 }
 
-.gpt3__features-container_feature-text p {
+.gpt3__features-container__feature-text p, .gpt3__features-container__feature-text-vertical p {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
@@ -46,12 +62,12 @@
 }
 
 @media screen and (max-width: 550px) {
-    .gpt3__features-container__feature-title h1 {
+    .gpt3__features-container__feature-title h1, .gpt3__features-container__feature-title-vertical h1 {
         font-size: 14px;
         line-height: 22px;
     }
 
-    .gpt3__features-container_feature-text p {
+    .gpt3__features-container__feature-text p, .gpt3__features-container__feature-text-vertical p {
         font-size: 12px;
         line-height: 20px;
     }
