@@ -4,7 +4,6 @@ This is final result of the website which was created using Project Walkthrough 
 
 ## How to run locally?
 ### 1. Clone the repository in your PC and open it with VSCode
-<git clone https://github.com/utkarsh125/modern-ui-website>
 
 ### 2. Open the terminal in VSCode and Type this
 <npm start>
